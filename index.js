@@ -53,17 +53,17 @@ function opcion2() {
     let gastosBasicos;
 
     do {
-        gastosBasicos = prompt("¿Indica los Gastos que tienes? \n 1-Luz \n 2-Gas \n 3-Agua \n 4-Total");
+        gastosBasicos = prompt("¿Indica los Gastos que tienes? \n 1-Luz \n 2-Agua \n 3-Gas \n 4-Total");
 
         if (gastosBasicos === '1') {
-            luz = parseInt(prompt("Ingresa el valor de la luz"), 10);
+            luz = parseInt(prompt("Ingresa el valor de la luz"), 10);//Base 10: El sistema decimal (que usamos en la vida cotidiana), que va de 0 a 9.
             alert("El valor de la luz es: " + luz);
         } else if (gastosBasicos === '2') {
-            gas = parseInt(prompt("Ingresa el valor del gas"), 10);
-            alert("El valor del gas es: " + gas);
-        } else if (gastosBasicos === '3') {
             agua = parseInt(prompt("Ingresa el valor del agua"), 10);
             alert("El valor del agua es: " + agua);
+        } else if (gastosBasicos === '3') {
+            agua = parseInt(prompt("Ingresa el valor del gas"), 10);
+            alert("El valor del gas es: " + gas);
         } else if (gastosBasicos === '4') {
             let total = luz + gas + agua;
             alert("El valor total es: " + total);
